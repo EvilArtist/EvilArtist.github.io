@@ -4,118 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="vanilla-tilt.js"></script>
 </head>
 <body>
-	<style>
-@import url('https://fonts.googleapis.com/css2?family=Play&family=Share+Tech+Mono&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-}
-body{
-    width: 100vw;
-    height: 100vh;
-}
-
-.background{
-    position: relative;
-    background-image: url('./img/background.jpg');
-    height: 100%;
-}
-
-.card{
-    min-width: 480px;
-    max-width: 650px;
-    width: 30%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 250px;
-    overflow: hidden;
-    backdrop-filter: blur(10px);
-    border: 2px solid transparent;
-    background-clip: padding-box;
-    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
-    border-top: 2px solid rgba(255,255,255,0.3);
-    border-left: 2px solid  rgba(255,255,255,0.3);
-    border-radius: 10px;
-}
-
-.card-background{
-    width: 150%;
-    height: 150%;
-    background: rgb(255,255,255);
-    background: linear-gradient(-60deg, rgba(255,255,255,1) 20%, rgba(255,255,255,0) 100%);
-    opacity: 0.3;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -2;
-}
-
-.name-wrapper{
-    height: 45%;
-    display: flex;
-    padding-bottom: .75rem;
-}
-.name-wrapper > div{
-    align-self: flex-end;
-}
-
-.name{
-    color: gold;
-    padding: 0 4rem;
-    font-size: xx-large;
-    text-shadow: 1px 1px rgba(255, 217, 0, 0.452);
-}
-
-.subtitle{
-    color: silver;
-    padding: 0 4rem;
-    font-family: 'Play', sans-serif;
-    padding: 0em 4rem;
-    font-size: large;
-}
-
-.nick-name{
-    color: silver;
-    font-family: 'Play', sans-serif;
-    padding: 0em 4rem;
-    font-size: small;
-}
-.text{
-    font-family: 'Play', sans-serif;
-}
-
-.number{
-    font-family: 'Share Tech Mono', monospace;
-}
-
-.phone, .linkedin, .mail{
-    color: silver;
-    padding: .325em 4rem 0em 4rem;
-    font-size: large;
-    display: flex;
-    gap: .5em;
-}
-
-path{
-    fill: silver;
-}
-svg{
-    filter: drop-shadow(1px 1px 1px rgb(49, 49, 49));
-}
-a{
-    color: silver;
-    text-decoration: none;
-}
-
-.text, .number{
-    text-shadow: 1px 1px rgb(49, 49, 49);
-}
-</style>
     <div class="background">
         <div class="card">
             <div class="card-background"></div>
@@ -125,7 +17,7 @@ a{
                         NGUYỄN XUÂN LỘC 
                     </div>
                     <div class="subtitle text">
-                        Software Developer 
+                        Co-founder at ESpace.edu.vn 
                     </div>
                 </div>
             </div>
@@ -133,7 +25,7 @@ a{
                 <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">
                     <path d="M16 22.621l-3.521-6.795c-.007.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.082-1.026-3.492-6.817-2.106 1.039c-1.639.855-2.313 2.666-2.289 4.916.075 6.948 6.809 18.071 12.309 18.045.541-.003 1.07-.113 1.58-.346.121-.055 2.102-1.029 2.11-1.033zm-2.5-13.621c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm9 0c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm-4.5 0c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5z"/>
                 </svg>
-                <span>0973893220</span>
+                <a href="tel:0973893220">0973893220</a>
             </div>
             
             <div class="text mail">
@@ -142,7 +34,6 @@ a{
                 </svg>
                 <a href="mailto:loc.nguyenxuan99@outlook.com">loc.nguyenxuan99@outlook.com</a>
             </div>
-
             
             <div class="text linkedin">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
@@ -151,6 +42,224 @@ a{
                 <a href="https://www.linkedin.com/in/evil-artist/">http://www.linkedin.com/in/evil-artist</a>
             </div>
         </div>
+    </div>
+    <div class="skills-sections">
+        <h1 class="title">Background</h1>
+        <div class="my-skills">
+            <div class="skills left4">
+                <div class="hexagon cs">
+                    <div class="skill">C#</div>
+                </div>
+            </div>
+            <div class="skills left3">
+                <div class="hexagon java">
+                    <div class="skill">java</div>
+                </div>
+                <div class="hexagon node medium">
+                    <div class="skill">Nodejs</div>
+                </div>
+            </div>
+            <div class="skills left2">
+                <div class="hexagon sql">
+                    <div class="skill">SQL</div>
+                </div>
+                <div class="hexagon winforms small">
+                    <div class="skill">Winform</div>
+                </div>
+                <div class="hexagon wpf">
+                    <div class="skill">WPF</div>
+                </div>
+            </div>
+    
+            <div class="skills left1">
+                <div class="hexagon html">
+                    <div class="skill">html</div>
+                </div>
+                <div class="hexagon css">
+                    <div class="skill">css</div>
+                </div>
+    
+                <div class="hexagon angular ">
+                    <div class="skill">Angular</div>
+                </div>
+    
+                <div class="hexagon react small">
+                    <div class="skill">React</div>
+                </div>
+            </div>
+    
+            <div class="skills">
+                <div class="hexagon cpp">
+                    <div class="skill">c++</div>
+                </div>
+    
+                <div class="hexagon embedded">
+                    <div class="skill">Embedded</div>
+                </div>
+                <div class="hexagon iot">
+                    <div class="skill">IOT</div>
+                </div>
+    
+                <div class="hexagon flutter small">
+                    <div class="skill">Flutter</div>
+                </div>
+    
+                <div class="hexagon figma medium">
+                    <div class="skill">Figma</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="experience-sections">
+        <h1 class="title">Experience</h1>
+        <div class="my-experience">
+            <div class="timeline left">
+                Now
+            </div>
+            <div class="experience right">
+                <div class="time-event">
+                    <div class="job">Co-founder</div> 
+                    <div class="tech"><div class="ul-head">To be in charge of: </div> 
+                        <ul>
+                            <li>UX/UI design</li>
+                            <li>Embedded Software</li>
+                            <li>Desktop Application</li>
+                            <li>Mobile application</li>
+                            <li>Frontend</li>
+                        </ul>
+                    </div>
+                    <div class="company">Groove technology</div>
+                </div>
+            </div>
+            <div class="timeline right">
+                Now
+            </div>
+            <div class="timeline left">
+                Dec 2020
+            </div>
+            <div class="experience left">
+                <div class="time-event">
+                    <div class="job">Full-stack developer</div> 
+                    <div class="tech">Saleforce ecommerce framework</div>
+                    <div class="company">Groove technology</div>
+                </div>
+            </div>
+            <div class="timeline right">
+                Dec 2020
+            </div>
+            
+            <div class="timeline left">
+                Jul 2020
+            </div>
+            <div class="experience left">
+                <div class="time-event">
+                    <div class="job">Full-stack developer, Technical leader</div> 
+                    <div class="tech">Develop retail framework base on .Net core</div>
+                    <div class="company">FPT Software</div>
+                </div>
+            </div>
+            <div class="timeline right">
+                Jul 2020
+            </div>
+            
+            <div class="timeline left">
+                Apr 2020
+            </div>
+            <div class="experience left">
+                <div class="time-event">
+                    <div class="job">Backend developer</div> 
+                    <div class="tech">Develop smart management website base on ASP.Net</div>
+                    <div class="company">FPT Software</div>
+                </div>
+            </div>
+            <div class="timeline right">
+                Apr 2020
+            </div>
+
+            <div class="timeline left">
+                Feb 2020
+            </div>
+            <div class="experience right">
+                <div class="time-event">
+                    <div class="job">Co-founder</div> 
+                    <div class="tech">Design, develop embedded software and window application for ETAS Parking</div>
+                    <div class="company">ESpace</div>
+                </div>
+            </div>
+            <div class="timeline right">
+                Sep 2020
+            </div>
+
+            <div class="timeline left">
+                Sep 2019
+            </div>
+            <div class="experience right">
+                <div class="time-event">
+                    <div class="job">Co-founder</div> 
+                    <div class="tech">Design, develop embedded software and window application for SPM Parking</div>
+                    <div class="company">ESpace</div>
+                </div>
+            </div>
+            <div class="timeline right">
+                Sep 2019
+            </div>
+            
+            <div class="timeline left">
+                Apr 2019
+            </div>
+            <div class="experience left">
+                <div class="time-event">
+                    <div class="job">Technical leader</div> 
+                    <div class="tech">Develop Test Automation System for embedded Software</div>
+                    <div class="company">FPT Software</div>
+                </div>
+            </div>
+            <div class="timeline right">
+                Apr 2019
+            </div>
+
+            <div class="timeline left">
+                Jan 2018
+            </div>
+            <div class="experience left">
+                <div class="time-event">
+                    <div class="job">Software Developer</div> 
+                    <div class="tech">Develop Healthcare software using c++</div>
+                    <div class="company">FPT Software</div>
+                </div>
+            </div>
+            <div class="timeline right">
+                Jan 2018
+            </div>
+            <div class="timeline left">
+                Jul 2017
+            </div>
+            <div class="experience left">
+                <div class="time-event">
+                    <div class="job">Software Developer</div> 
+                    <div class="tech">Develop Window application for Store chain system front end</div>
+                    <div class="company">FPT Software</div>
+                </div>
+            </div>
+            <div class="timeline right">
+                Jul 2017
+            </div>            
+            <div class="timeline left">
+                Jul 2015
+            </div>
+            <div class="experience left">
+                <div class="time-event">
+                    <div class="job">Software Engineer</div> 
+                    <div class="tech">Develop automation test for Embedded system, Improve test automation framework </div>
+                    <div class="company">Robert Bosch Engineering and Business Solutions</div>
+                </div>
+            </div>
+            <div class="timeline right">
+                Jul 2015
+            </div>
+        </div>
+
     </div>
 
    
